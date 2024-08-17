@@ -1,0 +1,134 @@
+body {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+
+}
+
+.page-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 0 0 0;
+
+
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 170px;
+    justify-content: center;
+    width: 170px;
+    text-align: center;
+}
+
+.table-cells {
+    display: grid;
+    grid-template-columns: repeat(2, 86px);
+    background-image: url("../images/backgroundtable.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.table-players{
+    display: grid;
+    grid-template-columns: repeat(2, 86px);
+    position: absolute;
+}
+
+.field__cells {
+    display: grid;
+    grid-template-columns: repeat(6, 86px);
+    box-sizing: border-box;
+    background-image: url("../images/backgroundfield.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*height: 100vh;*/
+    justify-content: center;
+    width: 540px;
+    text-align: center;
+
+}
+
+.elem-droppableArea {
+    text-align: center;
+    font-family: "Calibri Light";
+    font-weight: bold;
+    color: white;
+    height: 85px;
+    width: 85px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.player-elem {
+    text-align: center;
+    font-family: "Calibri Light";
+    /*font-weight: bold;*/
+    color: white;
+    height: 85px;
+    width: 85px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.player-draggableElement{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #4ee386;
+}
+
+.wrapper-count{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+.step-counter{
+    color: white;
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.drop-btn{
+    width: 100px;
+    font-weight: bold;
+
+}
+
+
